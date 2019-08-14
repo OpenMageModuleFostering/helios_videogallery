@@ -9,8 +9,8 @@ class Helios_Videogallery_Block_Adminhtml_Videogallery_Edit extends Mage_Adminht
 				$this->_objectId = "videogallery_id";
 				$this->_blockGroup = "videogallery";
 				$this->_controller = "adminhtml_videogallery";
-				$this->_updateButton("save", "label", Mage::helper("videogallery")->__("Save Item"));
-				$this->_updateButton("delete", "label", Mage::helper("videogallery")->__("Delete Item"));
+				$this->_updateButton("save", "label", Mage::helper("videogallery")->__("Save Video"));
+				$this->_updateButton("delete", "label", Mage::helper("videogallery")->__("Delete Video"));
 
 				$this->_addButton("saveandcontinue", array(
 					"label"     => Mage::helper("videogallery")->__("Save And Continue Edit"),
@@ -32,12 +32,12 @@ class Helios_Videogallery_Block_Adminhtml_Videogallery_Edit extends Mage_Adminht
 		{
 				if( Mage::registry("videogallery_data") && Mage::registry("videogallery_data")->getId() ){
 
-				    return Mage::helper("videogallery")->__("Edit Item '%s'", $this->htmlEscape(Mage::registry("videogallery_data")->getId()));
+				    return Mage::helper("videogallery")->__("Edit Video '%s'", $this->htmlEscape(Mage::registry("videogallery_data")->getId()));
 
 				} 
 				else{
 
-				     return Mage::helper("videogallery")->__("Add Item");
+				     return Mage::helper("videogallery")->__("Add Video");
 
 				}
 		}

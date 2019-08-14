@@ -59,7 +59,7 @@
                           </enabled>
                           <videotitle translate="label">
                               <label>Video Gallery Title</label>
-                              <frontend_type>text</frontend_type>
+                              <frontend_type>text</frontend_type>							  
                               <validate>validate-alphanum-with-spaces</validate>
                               <sort_order>1</sort_order>
                               <show_in_default>1</show_in_default>

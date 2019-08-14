@@ -27,26 +27,26 @@ class Helios_Videogallery_Block_Adminhtml_Videogallery_Grid extends Mage_Adminht
 				"index" => "videogallery_id",
 				));
                 $this->addColumn("videogallery_url", array(
-				"header" => Mage::helper("videogallery")->__("Youtube Url"),
+				"header" => Mage::helper("videogallery")->__("Video Thumbnail"),
 				"index" => "videogallery_url",
                 "align" =>"center",
-                "width" => "220px",
+                "width" => "200px",
                 'renderer'  => 'videogallery/renderer_image',
 				));
 
 				$this->addColumn("name", array(
-				"header" => Mage::helper("videogallery")->__("name"),
+				"header" => Mage::helper("videogallery")->__("Video Name"),
 				"index" => "name",
 				));
                 $this->addColumn('action',
                 array(
                     'header' => Mage::helper('videogallery')->__('Action'),
-                    'width' => '100',
+                    'width' => '120',
                     'type' => 'action',
                     'getter' => 'getId',
                     'actions'   => array(
                         array(
-                            'caption'   => Mage::helper('videogallery')->__('Delete'),
+                            'caption'   => Mage::helper('videogallery')->__('Delete Video'),
                             'url'       => array('base'=> '*/*/delete'),
                             'field'     => 'videogallery_id',
                             'confirm'  => Mage::helper('videogallery')->__('Are you sure?')

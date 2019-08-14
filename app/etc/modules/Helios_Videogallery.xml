@@ -4,7 +4,7 @@
     <Helios_Videogallery>
       <active>true</active>
       <codePool>community</codePool>
-      <version>0.1.0</version>
+      <version>0.1.1</version>
     </Helios_Videogallery>
   </modules>
 </config>
