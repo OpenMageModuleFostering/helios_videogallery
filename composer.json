@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Helios_Videogallery",
+    "name": "openmage-module-fostering\/helios_videogallery",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension provide you youtube  video gallery.",
     "authors": [
